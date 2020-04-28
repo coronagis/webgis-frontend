@@ -1,0 +1,15 @@
+.sidebar {
+  background-color: #25273e;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+}
+
+.logo {
+  width: 220px;
+  padding: 15px;
+}
+
+.totalWrapper{
+  align-self: end;
+}

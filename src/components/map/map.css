@@ -1,0 +1,7 @@
+.map-wrapper {
+  position: relative;
+  background-color: #25273e;
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+}

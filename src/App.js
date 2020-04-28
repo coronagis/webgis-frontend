@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Map from './components/map/Map'
+import Sidebar from './components/sidebar/Sidebar'
+import Card from './components/card/Card'
+import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main">
+      <Sidebar />      
+      <div className="content-wrapper">
+        <div className="cards-wrapper">
+          <Card title={'SUSPEITOS'} body={400}/>
+          <Card title={'CONFIRMADOS'} body={100}/>
+          <Card title={'MORTOS'} body={65}/>
+        </div>
+        <div className="custom-shadow m-2"> 
+          <Map/>  
+        </div>
+        
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
